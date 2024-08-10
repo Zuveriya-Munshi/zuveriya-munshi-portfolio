@@ -1,5 +1,4 @@
 import html from "../assets/skills/html.png";
-import css from "../assets/skills/css-3.png";
 import react from "../assets/skills/react.png";
 import mysql from "../assets/skills/mysql.png";
 import csharp from "../assets/skills/csharp.png";
@@ -10,8 +9,7 @@ import bootstrap from "../assets/skills/bootstrap-logo.png";
 import java from "../assets/skills/java.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+
 import colorSharp from "../assets/img/color-sharp.png"
 
 

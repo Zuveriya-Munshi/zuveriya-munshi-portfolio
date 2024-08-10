@@ -17,8 +17,8 @@ export const Footer = () => {
           <Col size={12} sm={6} className="text-center text-sm-end">
            <center>
            <div className="social-icon">
-              <a href="https://www.linkedin.com/in/zuveriya-munshi-8b951423a/" target="_blank"><img src={navIcon1} alt="Icon" /></a>
-              <a href="https://github.com/Zuveriya-Munshi" target="_blank"><img src={navIcon2} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/zuveriya-munshi-8b951423a/" target="_blank"  rel="noreferrer"><img src={navIcon1} alt="Icon" /></a>
+              <a href="https://github.com/Zuveriya-Munshi" target="_blank"  rel="noreferrer"><img src={navIcon2} alt="Icon" /></a>
             </div>
            </center>
             <p>Developed with ❤️ by Zuveriya Munshi</p>

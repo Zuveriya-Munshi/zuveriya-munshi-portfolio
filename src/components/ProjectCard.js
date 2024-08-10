@@ -1,5 +1,4 @@
 import { Col } from "react-bootstrap";
-import { FaGithub } from 'react-icons/fa'; // Import GitHub icon
 
 export const ProjectCard = ({ title, description, imgUrl,githubUrl }) => {
   return (
