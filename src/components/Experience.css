@@ -1,0 +1,50 @@
+/* Experience.css */
+
+.experience-container {
+  background-color: black;
+  padding: 50px;
+  border-radius: 50px;
+  max-width: 1400px; /* Adjust this value as needed */
+  margin:  auto; /* Center the container horizontally */
+  color: white;
+  margin-bottom: 20px;
+}
+h2{
+  text-align: center;
+  font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+  /* text-align: center; */
+  /* Add more styles here if needed, e.g., background color, hover effects */
+}
+
+.experience-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff; /* Or any other color you prefer */
+}
+
+.experience-item p:first-child {
+  font-style: italic;
+  margin-bottom: 5px;
+  color: #ccc; /* Or any other color you prefer */
+}
+
+.experience-item p {
+  line-height: 1.5;
+  color: #fff; /* Or any other color you prefer */
+}
+.experience-item {
+  /* Existing styles */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  /* align-items: center;   Center content horizontally */
+}
