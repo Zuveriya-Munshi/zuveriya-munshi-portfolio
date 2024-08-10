@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -10,37 +10,40 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = [ "Full Stack Web Developer", "Web Designer" ];
+  const [index, setIndex] = useState(1);
+  const toRotate = useMemo(() => ["Full Stack Developer", "Web Designer"], []);
   const period = 2000;
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+    const tick = () => {
+      let i = loopNum % toRotate.length;
+      let fullText = toRotate[i];
+      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+      setText(updatedText);
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+      if (isDeleting) {
+        setDelta(prevDelta => prevDelta / 2);
+      }
 
-    setText(updatedText);
+      if (!isDeleting && updatedText === fullText) {
+        setIsDeleting(true);
+        setIndex(prevIndex => prevIndex - 1);
+        setDelta(period);
+      } else if (isDeleting && updatedText === '') {
+        setIsDeleting(false);
+        setLoopNum(loopNum + 1);
+        setIndex(index + 1);
+        setDelta(500);
+      } else {
+        setIndex(prevIndex => prevIndex + 1);
+      }
+    };
 
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
+    const ticker = setInterval(tick, delta);
 
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(500);
-    }
-  }
+    return () => clearInterval(ticker);
+  }, [delta, loopNum, isDeleting, text, index, toRotate]);
 
   return (
     <section className="banner" id="home">
@@ -49,12 +52,25 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Zuveriya Munshi`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Web Developer", "Web Designer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm a full-stack web developer with a passion for creating innovative and user-centric web applications. With a solid foundation in both front-end and back-end development, I excel at transforming ideas into robust and scalable digital products. </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <span className="tagline">Welcome to my Portfolio</span>
+                  <h1>{`Hi! I'm Zuveriya Munshi`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer", "Web Designer"]'><span className="wrap">{text}</span></span></h1>
+                  <p>
+                    I'm a final-year Computer Engineering student with a passion for creating innovative and user-centric web applications.
+                  </p>
+                  <p>
+                    With a solid foundation in both front-end and back-end development, I excel at transforming ideas into robust and scalable digital products.
+                  </p>
+                  <p>
+                    My academic journey has equipped me with a diverse set of technical skills, including expertise in Java, React, and PHP, and has honed my problem-solving abilities.
+                  </p>
+                  <p>
+                    I am eager to leverage my skills and experience in the professional world and contribute to impactful projects.
+                  </p>
+                  <button onClick={() => window.location.href = 'mailto:your-email@example.com'}>
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>

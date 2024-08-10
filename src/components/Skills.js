@@ -2,6 +2,7 @@ import html from "../assets/skills/html.png";
 import react from "../assets/skills/react.png";
 import mysql from "../assets/skills/mysql.png";
 import csharp from "../assets/skills/csharp.png";
+import css from "../assets/skills/css-3.png";
 import js from "../assets/skills/javascript.png";
 import php from "../assets/skills/php.png";
 import postman from "../assets/skills/postman.png";
@@ -47,41 +48,45 @@ export const Skills = () => {
                 implementing efficient solutions.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={js} alt="Image" />
+                                <img src={js} alt="JS" />
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={php} alt="Image" />
+                                <img src={php} alt="PHP" />
                                 <h5>PHP</h5>
                             </div>
                             <div className="item">
-                                <img src={mysql} alt="Image" />
+                                <img src={mysql} alt="MySQL" />
                                 <h5>MySQL</h5>
                             </div>
                             <div className="item">
-                                <img src={csharp} alt="Image" />
+                                <img src={csharp} alt="C#" />
                                 <h5>C#</h5>
                             </div>
                             <div className="item">
-                                <img src={java} alt="Image" />
+                                <img src={java} alt="JAVA" />
                                 <h5>Java</h5>
                             </div>
                             
                             <div className="item">
-                                <img src={postman} alt="Image" />
+                                <img src={postman} alt="Postman" />
                                 <h5>Postman</h5>
                             </div>
                             <div className="item">
-                                <img src={html} alt="Image" />
+                                <img src={html} alt="HTML" />
                                 <h5>HTML</h5>
                             </div>
                             <div className="item">
-                                <img src={bootstrap} alt="Image" />
+                                <img src={css} alt="CSS" />
+                                <h5>CSS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={bootstrap} alt="Bootsrap" />
                                 <h5>Bootstrap</h5>
                             </div>
                            
                             <div className="item">
-                                <img src={react} alt="Image" />
+                                <img src={react} alt="React" />
                                 <h5>React</h5>
                             </div>
                         </Carousel>
@@ -89,7 +94,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="bg-img" />
     </section>
   )
 }

@@ -1,5 +1,4 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
 import railway from "../assets/img/railway.png";
 import event from "../assets/img/event.png";
 import spam from "../assets/img/spam.png";
