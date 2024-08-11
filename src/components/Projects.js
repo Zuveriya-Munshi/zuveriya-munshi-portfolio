@@ -13,7 +13,7 @@ export const Projects = () => {
   const projects = [
     {
       title: "Event Management System",
-      description: "Engineered an advanced Web-Based Event Management System, streamlining event booking, instrument reservations, and end-to-end logistics management (lighting, stage, sound system).",
+      description: "Engineered an advanced Web-Based Event Management System,streamlining event booking ,instrument reservations, and end-to-end logistics management (lighting, stage, sound system).",
       imgUrl: event,
       githubUrl: "https://github.com/Zuveriya-Munshi/Event-Management-System"
     },
@@ -34,8 +34,8 @@ export const Projects = () => {
       websiteUrl: "https://sridhd.com/BookingSystem/"
     },
     {
-      title: "Volunteer Management",
-      description: "Engineered an advanced Web-Based Event Management System, streamlining event booking, instrument reservations, and end-to-end logistics management (lighting, stage, sound system).",
+      title: "Volunteer Management System",
+      description: "Developed a full-stack web application to facilitate volunteer management and engagement. The platform encompasses user management, mission creation and management.",
       imgUrl: volunteer,
       githubUrl: "https://github.com/Zuveriya-Munshi/TatvaSoftInternship"
     }

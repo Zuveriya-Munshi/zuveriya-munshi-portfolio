@@ -42,7 +42,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p> possess a strong foundation in core programming languages and
+                        <p> Possess a strong foundation in core programming languages and
                 frameworks, enabling me to build robust and scalable web
                 applications. My expertise lies in crafting user-centric designs and
                 implementing efficient solutions.</p>

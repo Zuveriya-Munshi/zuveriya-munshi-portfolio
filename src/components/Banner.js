@@ -67,7 +67,7 @@ export const Banner = () => {
                   <p>
                     I am eager to leverage my skills and experience in the professional world and contribute to impactful projects.
                   </p>
-                  <button onClick={() => window.location.href = 'mailto:your-email@example.com'}>
+                  <button className="btn" onClick={() => window.location.href = 'mailto:zuveriyamunshi924@gmail.com'}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>}
