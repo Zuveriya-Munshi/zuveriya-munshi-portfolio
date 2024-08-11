@@ -28,14 +28,14 @@ export const Projects = () => {
 
   const internship = [
     {
-      title: "Railway Complex Booking System",
-      description: "Led the development of a web-based complex booking system, enhancing facility reservations for sports and increasing client satisfaction by 25%.",
+      title: "SRI Booking System",
+      description: "SRI, Dahod provides facilities for various sports, including badminton, table tennis, basketball, billiards, and snooker. Additionally, the Institute is a popular venue for family events such as marriages, engagements, birthdays, retirements, and other functions.",
       imgUrl: railway,
       websiteUrl: "https://sridhd.com/BookingSystem/"
     },
     {
-      title: "Volunteer Management System",
-      description: "Developed a full-stack web application to facilitate volunteer management and engagement. The platform encompasses user management, mission creation and management.",
+      title: "Virtual Community Platform Development",
+      description: "Developed a full-stack web application for virtual community support. Leveraged PostgreSQL for database management, Angular for frontend development, and .NET for backend services.Implemented user authentication, authorization, and role-based access control. Created features for mission management and user profiles",
       imgUrl: volunteer,
       githubUrl: "https://github.com/Zuveriya-Munshi/TatvaSoftInternship"
     }
