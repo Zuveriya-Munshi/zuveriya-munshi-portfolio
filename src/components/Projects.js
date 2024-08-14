@@ -34,7 +34,7 @@ export const Projects = () => {
       websiteUrl: "https://sridhd.com/BookingSystem/"
     },
     {
-      title: "Virtual Community Platform Development",
+      title: "Virtual Community Platform",
       description: "Developed a full-stack application for virtual community support. Leveraged Angular,PostgreSQL,and .NET technologies.Implemented role-based access control, mission management and user profiles",
       imgUrl: volunteer,
       githubUrl: "https://github.com/Zuveriya-Munshi/TatvaSoftInternship"
