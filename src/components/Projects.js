@@ -29,13 +29,13 @@ export const Projects = () => {
   const internship = [
     {
       title: "SRI Booking System",
-      description: "SRI, Dahod provides facilities for various sports, including badminton, table tennis, basketball, billiards, and snooker. Additionally, the Institute is a popular venue for family events such as marriages, engagements, birthdays, retirements, and other functions.",
+      description: "SRI, Dahod provides facilities for various sports, including badminton, table tennis, basketball, billiards, and snooker. And this is a popular venue for family events such as marriages, engagements, etc.",
       imgUrl: railway,
       websiteUrl: "https://sridhd.com/BookingSystem/"
     },
     {
       title: "Virtual Community Platform Development",
-      description: "Developed a full-stack web application for virtual community support. Leveraged PostgreSQL for database management, Angular for frontend development, and .NET for backend services.Implemented user authentication, authorization, and role-based access control. Created features for mission management and user profiles",
+      description: "Developed a full-stack application for virtual community support. Leveraged Angular,PostgreSQL,and .NET technologies.Implemented role-based access control, mission management and user profiles",
       imgUrl: volunteer,
       githubUrl: "https://github.com/Zuveriya-Munshi/TatvaSoftInternship"
     }
